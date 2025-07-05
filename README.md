@@ -123,6 +123,8 @@ gcloud logging read "resource.type=cloud_function AND resource.labels.function_n
 
 ---
 
-🌐 Author
+## 🙋‍♀️ Author
+
 Kshitija Randive
+
 🔗 GitHub | 🌐 Portfolio
