@@ -1,41 +1,41 @@
-# 📡 IoT Log Analyzer - GCP Serverless Project
+# 📡 IoT Log Analyzer – GCP Serverless Project
 
-A serverless log processing pipeline on Google Cloud Platform (GCP) that listens to IoT device messages published via **Pub/Sub**, triggers a **Cloud Function** to process them, and logs each message execution using **Cloud Logging**.
+![Shell Script](https://img.shields.io/badge/script-bash-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![GCP](https://img.shields.io/badge/GCP-PubSub%20%7C%20Cloud%20Function%20%7C%20Logging-orange)
+![Status](https://img.shields.io/badge/status-completed-brightgreen)
 
 ---
 
-## 🚀 Project Overview
+## 🧠 About the Project
 
-This project simulates a lightweight and scalable IoT logging system using:
+This project is a **real-time log processing system** designed using **Google Cloud Pub/Sub** and **Cloud Functions (2nd Gen)**. It simulates an IoT environment where device logs are streamed into a Pub/Sub topic and processed by a Cloud Function.
 
-- **Pub/Sub** to simulate IoT device log streams.
-- **Cloud Function** (Python) to process and log messages.
-- **Cloud Logging** to track device logs with execution IDs.
+Use Cases:
+- Real-time log analysis for IoT/Edge devices
+- Smart monitoring pipelines
+- Serverless alerting system foundations
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Google Cloud Platform
-  - Cloud Pub/Sub
-  - Cloud Functions (Python 3.11)
-  - Cloud Logging
-- Bash (for automation)
-- Cloud Shell or local terminal
+- **Google Cloud Pub/Sub** – for streaming IoT logs
+- **Cloud Functions (Python)** – serverless log handler
+- **Cloud Shell + Bash** – infrastructure automation
+- **IAM, API activation** – permission & service control
 
 ---
 
 ## 📂 Project Structure
 
-```
+```bash
 iot-log-analyzer/
-├── main.py               # Cloud Function code
-├── requirements.txt      # Dependencies (none in this case)
-├── deploy.sh             # Script to deploy Pub/Sub + Function
-├── screenshot.png        # Deployment verification screenshot
-├── README.md             # You're here!
-```
-
+├── main.py              # Cloud Function code
+├── requirements.txt     # Python dependencies
+├── deploy.sh            # Automated deployment script
+├── screenshot.png       # Terminal proof of working setup
+└── README.md            # This documentation
 ---
 
 ## 📜 Function Logic (main.py)
@@ -123,6 +123,6 @@ gcloud logging read "resource.type=cloud_function AND resource.labels.function_n
 
 ---
 
-## 🙋‍♀️ Author
-
-Kshitija Randive – [GitHub](https://github.com/kshitija100998)
+🌐 Author
+Kshitija Randive
+🔗 GitHub | 🌐 Portfolio
